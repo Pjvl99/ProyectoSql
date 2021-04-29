@@ -1,0 +1,10 @@
+CREATE USER 'admin'@'34.123.87.111' IDENTIFIED BY 'password1';
+CREATE USER 'maria'@'34.123.87.111' IDENTIFIED BY 'password2';
+CREATE USER 'pablo'@'34.123.87.111' IDENTIFIED BY 'password3';
+CREATE USER 'daniel'@'34.123.87.111' IDENTIFIED BY 'password4';
+CREATE USER 'diego'@'34.123.87.111' IDENTIFIED BY 'password5';
+GRANT ALL PRIVILEGES ON * . * TO 'admin'@'34.123.87.111';
+GRANT SELECT ON proyecto2.Productos TO 'maria'@'34.123.87.111';
+GRANT INSERT, SELECT, UPDATE ON proyecto2.compras TO 'pablo'@'34.123.87.111';
+GRANT INSERT, SELECT, UPDATE ON proyecto2.caja TO 'daniel'@'34.123.87.111';
+GRANT INSERT, SELECT, UPDATE ON proyecto2.ventas TO 'diego'@'34.123.87.111';
