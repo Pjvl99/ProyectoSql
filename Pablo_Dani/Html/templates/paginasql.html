@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> HopeLo </title>
+<style>
+nav { margin: 0;}
+ul {list-style-type: none;
+padding: 20px;
+margin: 0;
+background-color: black;}
+li {
+display: inline;
+font-size: 1.5em;
+font-family: Arial;
+}
+li a {
+text-decoration: none;
+color: lightgrey;
+padding: 20px 40px;
+}
+li a:hover{
+background-color: rebeccapurple;
+color: white;}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.esquina {
+  position: absolute;
+  top: 5%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+}
+.overlay{
+opacity: 0}
+.container:hover img{
+opacity: .95}
+.container:hover .overlay{
+opacity: 1}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.transparent_btn{
+display: inline-block;
+font-size: 14px;
+line-height: 120%;
+color: #FFF;
+background-color: transparent;
+border: 1px solid #FFF;
+padding: 10px 12px;
+border-radius: 4px;
+text-decoration: none;
+cursor: pointer;
+transition: background-color ease 400ms;}
+.transparent_btn:hover{
+color: #FFF;
+background-color: rgba(255,255,255,0.3);}
+.transparent_btn.orange{
+text-align: center;
+color: #FFFFFF;
+border-color: #FFFFFF;}
+.transparent_btn.orange:hover{
+background-color: rgba( 255,255,255, 0.8 );}
+.dropdown {  
+display: inline;
+}  
+.dropdown-content {  
+    position: absolute;
+top: 75px;
+  left: 367px;
+    background-color: black;  
+    min-width: 0px;  
+    display: none;  
+    z-index: 1;  
+}  
+.dropdown-content a {      
+    display: block;
+}  
+.dropdown:hover .dropdown-content {  
+    display: block; 
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+	<li><a href="/">Home</a></li>
+<li><a href="/productos">Productos</a></li>
+<!-- 1 --><div class="dropdown"><li><a href=""> Registrar </a></li><div class="dropdown-content">
+<li><a href="/VentasInsertar"> Ventas </a>  </li>
+<li><a href="/ComprasInsertar"> Compras </a>  </li>
+<li><a href="/InventarioInsertar"> Inventario </a>  </li>
+</div>  
+</div><!-- 2 -->
+<!-- 3
+<div class="esquina">
+<font color="White" face="Verdana" size="4">
+<p> Bienvenido, Pablo </p>
+</font>
+</div>
+4 -->
+<li><a href="/login">Loguearse</a></li>
+</ul>
+<div class="container">
+<img src="/static/555.jpg" width="1503" height="680">
+<div class="overlay">
+<div class="centered">
+<font size="6">
+<h1> HANDMADE WEARABLES </h1>
+<h3> From Guatemala to the world </h3></font>
+<a href="#" class="transparent_btn orange" href="#">Read more</a>
+</div></div></div>
+</nav>
+</body>
+</html>
